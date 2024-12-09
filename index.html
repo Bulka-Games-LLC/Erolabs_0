@@ -32,6 +32,15 @@
       //var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
 
+	if ('serviceWorker' in navigator) {
+	  navigator.serviceWorker.register('/sw.js').then(registration => {
+		console.log('Service Worker registered with scope:', registration.scope);
+	  }).catch(error => {
+		console.error('Service Worker registration failed:', error);
+	  });
+	}
+
+
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
       // If type=='warning', a yellow highlight color is used.
