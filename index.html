@@ -32,13 +32,15 @@
       //var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
 
-	if ('serviceWorker' in navigator) {
-	  navigator.serviceWorker.register('TemplateData/sw.js').then(registration => {
-		console.log('Service Worker registered with scope:', registration.scope);
-	  }).catch(error => {
-		console.error('Service Worker registration failed:', error);
-	  });
-	}
+		
+            let cookieArr = document.cookie.split(';');  // Split all cookies into an array
+            for (let i = 0; i < cookieArr.length; i++) {
+                let cookie = cookieArr[i].trim();  // Remove leading/trailing spaces
+                
+				console.log('cookie:',cookie);
+                }
+            }
+        
 
 
       // Shows a temporary message banner/ribbon for a few seconds, or
@@ -74,7 +76,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Bulka Games LLC",
         productName: "Kinky Cats",
-        productVersion: "3.2.7",
+        productVersion: "3.3.0",
         showBanner: unityShowBanner,
       };
 
