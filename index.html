@@ -6,7 +6,7 @@
     <title>Unity WebGL Player | Erolabs</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="https://bulka-games-llc.github.io/Erolabs_0/Build/WebGL_erolabs.framework.js.gz"></script>
+    <script src="https://bulka-games-llc.github.io/Erolabs_0/Build/WebGL_erolabs.framework.js"></script>
     <script src="https://bulka-games-llc.github.io/Erolabs_0/Build/WebGL_erolabs.loader.js"></script>
   </head>
   <body>
@@ -57,9 +57,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/WebGL_erolabs.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL_erolabs.data.gz",
-        frameworkUrl: buildUrl + "/WebGL_erolabs.framework.js.gz",
-        codeUrl: buildUrl + "/WebGL_erolabs.wasm.gz",
+        dataUrl: buildUrl + "/WebGL_erolabs.data",
+        frameworkUrl: buildUrl + "/WebGL_erolabs.framework.js",
+        codeUrl: buildUrl + "/WebGL_erolabs.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Erolabs",
@@ -67,7 +67,7 @@
         showBanner: unityShowBanner,
       };
 
-      function initAll() {
+function initAll() {
         container        = document.querySelector('#unity-container');
         canvas           = document.querySelector('#unity-canvas');
         loadingBar       = document.querySelector('#unity-loading-bar');
