@@ -32,18 +32,6 @@
       //var fullscreenButton = document.querySelector("#unity-fullscreen-button");
       var warningBanner = document.querySelector("#unity-warning");
 
-		
-			console.log(document.cookie);
-            let cookieArr = document.cookie.split(';');  // Split all cookies into an array
-            for (let i = 0; i < cookieArr.length; i++)
-			{
-                let cookie = cookieArr[i].trim();  // Remove leading/trailing spaces
-                
-				console.log('cookie:',cookie);
-            }
-        
-
-
       // Shows a temporary message banner/ribbon for a few seconds, or
       // a permanent error message on top of the canvas if type=='error'.
       // If type=='warning', a yellow highlight color is used.
@@ -77,7 +65,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Bulka Games LLC",
         productName: "Kinky Cats",
-        productVersion: "3.3.0",
+        productVersion: "3.5.4",
         showBanner: unityShowBanner,
       };
 
