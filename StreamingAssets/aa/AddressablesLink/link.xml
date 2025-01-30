@@ -9,6 +9,7 @@
     <type fullname="Cats.Events.EventContentHandler" preserve="all" />
     <type fullname="Cats.Events.EventsContentHeaderConfig" preserve="all" />
     <type fullname="Cats.Events.QuestEventContentHandler" preserve="all" />
+    <type fullname="Cats.Game.Localization.LocalizationTextMeshPro" preserve="all" />
     <type fullname="Cats.Intro.IntroPlayer" preserve="all" />
     <type fullname="Cats.Items.ItemsSpritesConfig" preserve="all" />
     <type fullname="Cats.PhrasePlayer" preserve="all" />
